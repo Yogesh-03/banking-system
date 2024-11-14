@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_nav_graph"
+    app:startDestination="@id/upiPaymentFragment">
+
+    <fragment
+        android:id="@+id/upiPaymentFragment"
+        android:name="com.news2day.yadavbankingservices.ui.UpiPaymentFragment"
+        android:label="fragment_upi_payment"
+        tools:layout="@layout/fragment_upi_payment" >
+        <action
+            android:id="@+id/action_upiPaymentFragment_to_upiPaymentFragment2"
+            app:destination="@id/upiPaymentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/upiPaymentFragment2"
+        android:name="com.news2day.yadavbankingservices.ui.UpiPaymentFragment2"
+        android:label="fragment_upi_payment2"
+        tools:layout="@layout/fragment_upi_payment2" >
+        <action
+            android:id="@+id/action_upiPaymentFragment2_to_upiPaymentPinFragment"
+            app:destination="@id/upiPaymentPinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalPaymentFragment"
+        android:name="com.news2day.yadavbankingservices.ui.FinalPaymentFragment"
+        android:label="fragment_final_payment"
+        tools:layout="@layout/fragment_final_payment" />
+    <fragment
+        android:id="@+id/upiPaymentPinFragment"
+        android:name="com.news2day.yadavbankingservices.ui.UpiPaymentPinFragment"
+        android:label="fragment_upi_payment_pin"
+        tools:layout="@layout/fragment_upi_payment_pin" >
+        <action
+            android:id="@+id/action_upiPaymentPinFragment_to_finalPaymentFragment"
+            app:destination="@id/finalPaymentFragment" />
+    </fragment>
+</navigation>

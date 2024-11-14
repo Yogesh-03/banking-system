@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#123456" /> <!-- Solid fill color -->
+
+    <!-- Apply radius to only the bottom corners -->
+    <corners
+        android:bottomLeftRadius="42dp"
+        android:bottomRightRadius="42dp" />
+</shape>

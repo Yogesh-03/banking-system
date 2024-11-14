@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/baseline_add_home_24"/>
+
+    <item
+        android:id="@+id/homeFragment1"
+        android:title="Loans"
+        android:icon="@drawable/baseline_add_home_24"/>
+
+    <item
+        android:id="@+id/payFragment"
+        android:title="Pay"
+        android:icon="@drawable/baseline_add_home_24"/>
+
+    <item
+        android:id="@+id/trackerFragment2"
+        android:title="Tracker"
+        android:icon="@drawable/baseline_add_home_24"/>
+
+    <item
+        android:id="@+id/transactionsFragment3"
+        android:title="Transactions"
+        android:icon="@drawable/baseline_add_home_24"/>
+</menu>

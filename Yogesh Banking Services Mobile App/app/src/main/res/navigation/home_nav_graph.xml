@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.news2day.yadavbankingservices.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/transactionsFragment3"
+        android:name="com.news2day.yadavbankingservices.ui.TransactionsFragment"
+        android:label="fragment_transactions"
+        tools:layout="@layout/fragment_transactions" />
+    <fragment
+        android:id="@+id/trackerFragment2"
+        android:name="com.news2day.yadavbankingservices.ui.TrackerFragment"
+        android:label="fragment_tracker"
+        tools:layout="@layout/fragment_tracker" />
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.news2day.yadavbankingservices.ui.PayFragment"
+        android:label="fragment_pay"
+        tools:layout="@layout/fragment_pay" />
+</navigation>
